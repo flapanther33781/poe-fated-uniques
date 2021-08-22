@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PoE Recipe Calc</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="./index.js"></script>
+    <style>
+        th, td, p, input, h3 {
+            font:15px 'Segoe UI';
+        }
+        table, th, td {
+            border: solid 1px #ddd;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <p>
+	<b>FAQ</b><br><br>
+	Why does this page take so long to load?<br><br>
+	The PoE trade website has a rate-limiter to keep people from writing scripts that overwhelm the trade site.  The rate limiter only allows 1 search per second from each IP address.  Webpages being run on a server - like I'm sure poe.ninja is, for example - get around this by <a href="https://en.wikipedia.org/wiki/Cache_(computing)">caching their search results locally</a>, and only refreshing their searches every so often.<br><br>
+	My website is not being hosted on a server, it's being hosted on an AWS bucket.  AWS buckets have limited storage space and can't do any calculations on their own.  When you load this webpage you're downloading the code and running it from your own computer.  Therefore you are limited to 1 search per second.  There are 57 itemized prophecy recipies, each being made up of three items (the prophecy, the original item, and the upgraded item).  So to load them all you're doing 171 requests (57 x 3).  At one per second that's about 3 minutes.
+	</p>
+	<hr>
+    <p>
+	<b>Planned improvements:</b><br><br>
+	Auto-generate links for the current leagues rather than hand code them.<br>
+	Add a filter that will only show you recipes whose investment is below a user-defined threshold.<br>
+	Add a filter that will only show you recipes generating above a user-defined amount of profit.<br>
+	Add vendor recipies that give unique or valuable items.<br>
+    </p>
+</body>
+
+</html>

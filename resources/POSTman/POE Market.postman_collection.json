@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "4a1750aa-0ac1-45d5-81e5-ef482db25957",
+		"name": "POE Market",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "./api/trade/data/leagues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pathofexile.com/api/trade/data/leagues\n",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pathofexile",
+						"com"
+					],
+					"path": [
+						"api",
+						"trade",
+						"data",
+						"leagues\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "./api/trade/data/static",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pathofexile.com/api/trade/data/static",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pathofexile",
+						"com"
+					],
+					"path": [
+						"api",
+						"trade",
+						"data",
+						"static"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "./api/trade/data/stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pathofexile.com/api/trade/data/stats",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pathofexile",
+						"com"
+					],
+					"path": [
+						"api",
+						"trade",
+						"data",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "./api/trade/search/Delirium",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query\": {\n        \"status\": {\n            \"option\": \"online\"\n        },\n        \"name\": \"The Pariah\"\n    },\n    \"sort\": {\n        \"price\": \"asc\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://www.pathofexile.com/api/trade/search/Delirium",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pathofexile",
+						"com"
+					],
+					"path": [
+						"api",
+						"trade",
+						"search",
+						"Delirium"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "./api/trade/fetch/c84fa4b129d5271cf8b8bc4b736688bbe149830fed0086d80f508f778917077d?query=WqmMQzTm",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pathofexile.com/api/trade/fetch/c84fa4b129d5271cf8b8bc4b736688bbe149830fed0086d80f508f778917077d?query=WqmMQzTm",
+					"protocol": "https",
+					"host": [
+						"www",
+						"pathofexile",
+						"com"
+					],
+					"path": [
+						"api",
+						"trade",
+						"fetch",
+						"c84fa4b129d5271cf8b8bc4b736688bbe149830fed0086d80f508f778917077d"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "WqmMQzTm"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

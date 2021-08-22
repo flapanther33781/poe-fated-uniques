@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Path of Exile Fated Unique Profit Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+	<h2>
+    	Please wait while we process your request.  This page will take 3 minutes to load all 57 recipies.  Best advice is to load it once, then leave it in the background while you play.
+    </h2>
+	<p>
+	<b>If you want to know why it's so slow read the <a href="./poefaq.html">FAQ</a>.</b>
+	</p>
+	<hr>
+	<b>This sheet is only useful until you can run T2 maps reliably and have ~150c in the bank.</b><br>
+	At that point map-running profits are far faster than trying to purchase/run prophecies.<br>
+	You can compile 6-12 unidentified rare sets (or more) worth 2c each  in the time it takes to sell even one of these items, that's 12c-24c right there.<br>
+	(Buy rings/amulets/belts for 1alc each in bulk, 12-24 at a time.)
+	<br><br>
+	<p><b>This calculator assumes 1c = 1c, 1 exa = 100c, and everything else = .1c</b><br>
+	I know it's not exact, but it's close enough for you to see what makes sense to craft without having to do a shitload more coding. It's not worth the extra effort on the backend.
+	<br><br>
+	<b>This calculator is going by the lowest price for each item.</b><br>
+	Be aware the resulting item may sell for even more than shown here, depending on the stat rolls your item gets or how many sockets you can put on it.
+	<br><br>
+	<b>Tip: Don't look at this tool expecting to buy from scratch. A better use of this tool is to check your drops and get familiar with these items.</b><br>
+	This is faster because you get the item running maps (which means you're leveling) instead of messaging 20 people trying to buy it (which means you're not leveling).<br>
+	When you get a unique drop check here to see if it's worth upgrading. Once you've upgraded it use the trade links here to check prices if you don't have the <a href="https://pathofexile.gamepedia.com/List_of_Path_of_Exile_related_applications">Poe Trade Macro</a> installed.
+	<br><br>
+	<b>If you're flat broke and need to make some currency then PLEASE - DO NOT MAKE MULTIPLES OF THE SAME ITEM !!!</b><br>
+	That makes everyone's prices go down, including yours.<br>
+	Either pick 2-3 items and only make one of each or "go all in" and invest all your spare currency on one expensive item.<br>
+	Just because there is a POTENTIAL profit doesn't mean anything if your item doesn't sell. Check <a href="https://poe.ninja/">poe.ninja</a> to check interest in the item.
+	</p>
+	<hr>
+    <p>
+        No registration required. I don't want your email, just toss me a few bucks if this has helped you.<br>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="XRYXVJUBBBJXG" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+	</p>
+	<p>
+		If you can't donate, please at least check out (and maybe support) my other projects:
+	</p>
+	<p style="margin-left: 40px">
+		<a href="https://horrormakesushappy.com">Horror Makes Us Happy</a><br>
+		<a href="https://recoverybookpress.com">Recovery Book Press</a><br>
+		<a href="https://MobileDisplayTest.com">Mobile Display Test</a><br>
+		<a href="https://soundcloud.com/djraiderfl">My Soundcloud</a><br>
+		<a href="https://horrormakesushappy.com/poe/poe_awkening_order.html">Path of Exile - Awakening Bonus Order List</a>
+	</p>
+	<p>
+	Props to my roommate, <a href="https://blog.davidjeddy.com">David J Eddy</a>, who wrote the javascript.  Couldn't have done it without him.
+	<p>
+	<hr>
+	
+	<table style="width:100%">
+	<tr>
+		<td><a href="./poe_fated_uniques.html">Standard recipes</a></td>
+		<td><a href="./poe_fated_uniques.html?league=Hardcore">Standard HC recipes</a></td>
+		<td><a href="./poe_fated_uniques.html?league=Expedition">Expedition recipes</a></td>
+		<td><a href="./poe_fated_uniques.html?league=Hardcore Expedition">Expedition HC recipes</a></td>
+	</tr>
+	</table> 
+
+	<span>The league you have chosen is: </span>
+	<span id='league'></span>
+	<div id='prophecies'>Polling the prophecies: </div>
+	<div id='sacrifices'>Polling the items to be upgraded: </div>
+	<div id='results'>Polling the resultant items: </div>
+    <p id='showData'></p>
+<!--    <p id='msg'></p> -->
+</body>
+</html>
